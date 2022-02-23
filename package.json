@@ -10,7 +10,7 @@
     }
   },
   "scripts": {
-    "start": "",
+    "start": "AUTH0_DOMAIN=$npm_config_domain AUTH0_CLIENT_ID=$npm_config_client AUTH0_AUDIENCE=$npm_config_audience",
     "build": "",
     "clear": ""
   },
