@@ -10,9 +10,9 @@
     }
   },
   "scripts": {
-    "start": "AUTH0_DOMAIN=$npm_config_domain AUTH0_CLIENT_ID=$npm_config_client AUTH0_AUDIENCE=$npm_config_audience",
-    "build": "",
-    "clear": ""
+    "start": "AUTH0_DOMAIN=$npm_config_domain AUTH0_CLIENT_ID=$npm_config_client AUTH0_AUDIENCE=$npm_config_audience parcel --open --port 3030 --dist-dir ./public",
+    "build": "AUTH0_DOMAIN=$npm_config_domain AUTH0_CLIENT_ID=$npm_config_client AUTH0_AUDIENCE=$npm_config_audience parcel build",
+    "clear": "rm -rf ./public .parcel-cache"
   },
   "keywords": [
     "parcel"
@@ -21,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
+    "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
