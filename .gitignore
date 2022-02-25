@@ -12,3 +12,6 @@
 .parcel-cache
 
 /dev
+
+# Local Netlify folder
+.netlify
