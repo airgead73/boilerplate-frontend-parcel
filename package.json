@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "AUTH0_DOMAIN=$npm_config_domain AUTH0_CLIENT_ID=$npm_config_client AUTH0_AUDIENCE=$npm_config_audience parcel --open --port 3030 --dist-dir ./public",
-    "build": "AUTH0_DOMAIN=$npm_config_domain AUTH0_CLIENT_ID=$npm_config_client AUTH0_AUDIENCE=$npm_config_audience parcel build",
+    "build": "parcel build src/index.html",
     "clear": "rm -rf ./public .parcel-cache"
   },
   "keywords": [
